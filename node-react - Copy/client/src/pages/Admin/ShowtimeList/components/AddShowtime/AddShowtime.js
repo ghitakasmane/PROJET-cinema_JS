@@ -119,7 +119,7 @@ class AddShowtime extends Component {
               fullWidth
               select
               className={classes.textField}
-              helperText="Please specify the Time"
+              helperText=""
               label="Horaire"
               margin="dense"
               required

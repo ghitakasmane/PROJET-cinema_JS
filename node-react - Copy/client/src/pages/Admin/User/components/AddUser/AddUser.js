@@ -81,7 +81,7 @@ class AddUser extends Component {
             <TextField
               fullWidth
               className={classes.textField}
-              helperText="Please specify the Full Name"
+              helperText=""
               label="Nom complet"
               margin="dense"
               required
@@ -147,7 +147,7 @@ class AddUser extends Component {
               fullWidth
               select
               className={classes.textField}
-              helperText="Admin or Guest"
+              helperText=""
               label="Role"
               margin="dense"
               required

@@ -53,7 +53,7 @@ export const addUser = user => async dispatch => {
     const data = await response.json();
     const newUser = data.user;
     if (response.ok) {
-      dispatch(setAlert('User Created', 'success', 5000));
+      dispatch(setAlert('Utilisateur Créé', 'success', 5000));
       dispatch({ type: ADD_USER, payload: newUser });
       return { status: 'success', message: 'User Created' };
     } else {
@@ -83,7 +83,7 @@ export const updateUser = (user, id) => async dispatch => {
     const data = await response.json();
     const newUser = data.user;
     if (response.ok) {
-      dispatch(setAlert('User Updated', 'success', 5000));
+      dispatch(setAlert('Utilisateur Modifié', 'success', 5000));
       dispatch({ type: UPDATE_USER, payload: newUser });
       return { status: 'success', message: 'User Updated' };
     } else {
@@ -111,7 +111,7 @@ export const deleteUser = id => async dispatch => {
     });
     const data = await response.json();
     if (response.ok) {
-      dispatch(setAlert('User Deleted', 'success', 5000));
+      dispatch(setAlert('Utilisateur Supprimé', 'success', 5000));
       dispatch({ type: DELETE_USER, payload: id });
       return { status: 'success', message: 'User Removed' };
     } else {

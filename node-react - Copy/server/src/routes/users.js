@@ -25,7 +25,7 @@ router.post('/users/photo/:id', upload('users').single('file'), async (req, res,
   const userId = req.params.id;
   try {
     if (!file) {
-      const error = new Error('Please upload a file');
+      const error = new Error('charger un fichier ');
       error.httpStatusCode = 400;
       return next(error);
     }
@@ -40,7 +40,7 @@ router.post('/users/photo/:id', upload('users').single('file'), async (req, res,
   }
 });
 
-// Login User
+// Login Users
 router.post('/users/login', async (req, res) => {
   try {
     const user = await User.findByCredentials(req.body.username, req.body.password);
@@ -48,7 +48,7 @@ router.post('/users/login', async (req, res) => {
     res.send({ user, token });
   } catch (e) {
     res.status(400).send({
-      error: { message: 'You have entered an invalid username or password' },
+      error: { message: 'Nom d utilisateur ou mot de passe invalid' },
     });
   }
 });

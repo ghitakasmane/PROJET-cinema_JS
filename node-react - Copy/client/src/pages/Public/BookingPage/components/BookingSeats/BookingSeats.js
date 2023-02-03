@@ -64,7 +64,7 @@ export default function BookingSeats(props) {
                       : seat === 2
                       ? 'rgb(105, 4, 11)'
                       : seat === 3
-                      ? 'rgb(14, 151, 218)'
+                      ? 'rgb(181, 58, 58)'
                       : 'rgb(181, 58, 58)'
                   }>
                   {index + 1}
@@ -91,7 +91,7 @@ export default function BookingSeats(props) {
             <div
               className={classes.seatInfoLabel}
               style={{ background: 'rgb(105, 4, 11)' }}></div>
-            Chaise sélectionner
+            Chaises sélectionnées
           </div>
           <div className={classes.seatInfo}>
             {/* <div

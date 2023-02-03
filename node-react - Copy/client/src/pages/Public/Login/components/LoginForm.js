@@ -100,7 +100,7 @@ function LoginForm(props) {
       <div className={classes.fields}>
         <TextField
           className={classes.textField}
-          label="username"
+          label="nom d'utilisateur"
           name="username"
           onChange={event => handleFieldChange(event)}
           type="text"
@@ -109,7 +109,7 @@ function LoginForm(props) {
         />
         <TextField
           className={classes.textField}
-          label="Password"
+          label="Mot de passe"
           name="password"
           onChange={event => handleFieldChange(event)}
           type="password"
